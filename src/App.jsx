@@ -1,4 +1,6 @@
 import "./index.css";
+import { Button } from "@/components/ui/button"
+
 function App() {
   return (<>
     <nav className="flex justify-between items-center p-6 px-8 md:px-16 lg:px-24 bg-black">
@@ -12,9 +14,10 @@ function App() {
         <a href="/contact" className="text-2xl text-white font-semibold ml-10 hover:text-gray-400 transition-all duration-300">Contact</a>
       </div>
     </nav>
-    <div className=" w-full min-h-screen bg-black text-white">
+    <div className=" w-full min-h-screen bg-black text-white flex items-center justify-center">
+      <Button>Click me</Button>
     </div>
-    <div className="flex items-center justify-center h-screen bg-gradient-to-b from-black to-gray-400">
+    <div className=" w-full min-h-screen">
 
     </div>
   </>
