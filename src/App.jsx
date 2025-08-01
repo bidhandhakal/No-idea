@@ -2,27 +2,24 @@ import "./index.css";
 import { Button } from "@/components/ui/button"
 
 function App() {
-  return (<>
-    <nav className="flex justify-between items-center p-6 px-8 md:px-16 lg:px-24 bg-black">
-      <div className="flex items-center gap-2">
-        <a href="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt="logo" className="w-12 h-12" />
-          <h1 className="text-2xl font-bold text-white">NOIDEA</h1>
-        </a>
-      </div>
-      <div className="flex items-center gap-2">
-        <a href="/about" className="text-2xl text-white font-semibold ml-10 hover:text-gray-400 transition-all duration-300">About</a>
-        <a href="/projects" className="text-2xl text-white font-semibold ml-10 hover:text-gray-400 transition-all duration-300">Projects</a>
-        <a href="/contact" className="text-2xl text-white font-semibold ml-10 hover:text-gray-400 transition-all duration-300">Contact</a>
-      </div>
-    </nav>
-    <div className=" w-full min-h-screen bg-black text-white flex items-center justify-center">
-      <Button className="hover:bg-white hover:text-black cursor-pointer">Click me</Button>
-    </div>
-    <div className=" w-full min-h-screen">
-
-    </div>
-  </>
+  return (
+    <>
+      <nav className="flex justify-between items-center p-15 px-8 md:px-16 lg:px-24 bg-[#F0F1FA]">
+        <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
+            <h1 className="text-3xl font-bold tracking-widest text-black">NOIDEA</h1>
+          </a>
+        </div>
+        <div>
+          <Button className="bg-[#2B2E3A] text-white text-base font-sans font-bold hover:bg-[#3A47F4] cursor-pointer w-30 h-13 rounded-full transition-all duration-400 p-2 mr-4">
+            HIRE ME
+          </Button>
+          <Button className="bg-[#F0F1FA] text-black text-base font-sans font-bold hover:bg-[#ffffff] cursor-pointer w-30 h-13 rounded-full transition-all duration-400 p-2">
+            MENU
+          </Button>
+        </div>
+      </nav>
+    </>
   );
 }
 
