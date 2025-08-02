@@ -44,8 +44,27 @@ function App() {
       <div className="flex flex-col items-start justify-center h-screen pl-24">
         <h1 className="text-5xl">I AM FULLSTACK DEVELOPER</h1>
       </div>
-      <div className="flex flex-col items-start justify-center h-screen pl-18">
-        <span className=" text-[16rem]">PROJECTS</span>
+      <div className="flex flex-col items-start h-screen pl-18 relative">
+        <span className="text-[19rem] tracking-tight">PROJECTS</span>
+        <span className="absolute top-26 right-24 text-8xl font-normal">5</span>
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 24 24"
+          className="absolute bottom-167 right-16 transform rotate-45"
+        >
+          <path
+            d="M5 12h14M12 5l7 7-7 7"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg>
+      </div>
+      <div className="w-2/5 ml-23  rounded-4xl overflow-hidden">
+        <img src="image.png" alt="Luxera" />
       </div>
     </>
   );
